@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>2024 IEEE SciVis Contest</title>
+    <title>2025 IEEE SciVis Contest on 2024 IEEE SciVis Contest</title>
     <link>https://sciviscontest2024.github.io/</link>
-    <description>Recent content on 2024 IEEE SciVis Contest</description>
+    <description>Recent content in 2025 IEEE SciVis Contest on 2024 IEEE SciVis Contest</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 11 Oct 2023 17:32:39 +1000</lastBuildDate><atom:link href="https://sciviscontest2024.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 28 Nov 2019 15:14:39 +1000</lastBuildDate><atom:link href="https://sciviscontest2024.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Submission Instruction</title>
       <link>https://sciviscontest2024.github.io/submission/instruction/</link>
@@ -25,7 +25,7 @@ A 2-page PDF describing your visualization and analysis techniques. Focus on the
       <guid>https://sciviscontest2024.github.io/submission/dates/</guid>
       <description>We will be following the process of the last years.
 There might be slight changes but the plan is this:
-Dates October 23, 2023 Official announcement of the 2024 IEEE SciVis Contest at IEEE VIS 2023. July 31, 2024 August 7, 2024 Submission Deadline. approx. September, 2024 Winner notification. approx. October, 2024 Official announcement of the end results at IEEE VIS 2024. Deadlines are set as 23:59 AOE.</description>
+Dates October 14, 2024 Official announcement of the 2025 IEEE SciVis Contest at IEEE VIS 2024. approx. July 31, 2025 Submission Deadline. approx. September, 2025 Winner notification. approx. October, 2025 Official announcement of the end results at IEEE VIS 2025. Deadlines are set as 23:59 AOE.</description>
     </item>
     
     <item>

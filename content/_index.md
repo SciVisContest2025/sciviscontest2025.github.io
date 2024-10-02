@@ -1,23 +1,21 @@
 ---
-title: '2024 IEEE SciVis Contest'
-date: 2023-10-11T17:32:39+10:00
+title: '2025 IEEE SciVis Contest'
+date: 2024-10-2T17:32:39+10:00
 ---
 
-Sonar Imaging for Hydrothermal Systems
+Material Science Challenge: discovery of novel materials 
 
 {{< rawhtml >}}
 <img style="width:40%" src="Logo_other color gradient.png" />
 {{< /rawhtml >}}
 
-Welcome to the *2024 IEEE SciVis Contest* website.
+Welcome to the *2025 IEEE SciVis Contest* website.
 This contest is held annually as part of the [IEEE VIS Conference.](http://ieeevis.org)  
-In 2024, the conference and this contest will be held in Tampa Bay, Florida, USA, and will focus on the visualization of  
- ***Sonar Imaging for Hydrothermal Systems***.
+In 2025, the conference and this contest will be held in Vienna, Austria, and will focus on the visualization-based discovery of  
+ ***novel materials in recylcing***.
 
 On this website, you can find information on the provided [data,](/data) the visualization [tasks,](/tasks) as well as the [submission process.](/submission)  
-If there still are questions, feel free to contact the [contest chairs](mailto:scivis_contest@ieeevis.org) or join the [Google Group.](https://groups.google.com/g/scivis2024).
-
-**The deadline has been extended to August 7th, 2024**.
+If there still are questions, feel free to contact the [contest chairs](mailto:scivis_contest@ieeevis.org) or join the [Google Group.](https://groups.google.com/g/scivis2025).
 
 
 ###### Watch a video from IEEE VIS 2024 presenting the data and tasks:
@@ -31,5 +29,5 @@ If there still are questions, feel free to contact the [contest chairs](mailto:s
 {{< /rawhtml >}}
 
 ###### Contact
-Chair: Tim Gerrits, RWTH Aachen University, Germany - [contact via email](mailto:gerrits@vis.rwth-aachen.de)  
-Co-Chair: Karen Bemis, Department of Marine and Coastal Sciences, Rutgers University, USA - [contact via email](mailto:bemis@marine.rutgers.edu)
+Chair: Christoph Heinzl, University of Passau, Germany - [contact via email](mailto:christoph.heinzl@uni-passau.de)  
+Co-Chair: Tim Gerrits, RWTH Aachen University, Germany - [contact via email](mailto:gerrits@vis.rwth-aachen.de))

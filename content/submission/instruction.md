@@ -18,6 +18,8 @@ To submit:
 ![Submission Selection](/submit.png)
 5. Edit the submission with your data and record the changes  
 
+***Be aware:*** If your submission is accepted for presentation at VIS, at least one author must register and attend the conference in-person.
+
 
 {{< rawhtml >}}
 <div style="height:  20px"></div>
