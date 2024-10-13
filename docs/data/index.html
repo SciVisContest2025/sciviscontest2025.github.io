@@ -11,7 +11,7 @@
 
   
   
-  <link rel="stylesheet" href="/css/style.min.db7475b6db0fdaa1427f4fed2471ff6271a0ad713e53679de8ada5ff64b6a75c.css">
+  <link rel="stylesheet" href="/css/style.min.b64f6c76612afa37f10af01c80b7207e5cdfd41a522cd5422a13b3705b767249.css">
   
 
   
@@ -65,10 +65,10 @@
     <div class='header'>
   <div class="container">
     <div class="logo">
-      <a href="https://sciviscontest2025.github.io/"><img alt="Logo" src="/Logo_other%20color%20gradient.png" /></a>
+      <a href="https://sciviscontest2025.github.io/"><img alt="Logo" src="/Logo_25.png" /></a>
     </div>
     <div class="logo-mobile">
-      <a href="https://sciviscontest2025.github.io/"><img alt="Logo" src="/Logo_other%20color%20gradient.png" /></a>
+      <a href="https://sciviscontest2025.github.io/"><img alt="Logo" src="/Logo_25.png" /></a>
     </div>
     <div id="main-menu" class="main-menu">
   <ul>
@@ -173,11 +173,18 @@
   
   <p>If you want to skip the background for now, go and <a href="#Download Data">download the data</a>
  directly.</p>
-<p>This year, the contest is looking into the visualization-based discovery of novel materials in recycling: Al-Si piston alloys are highly specialized regarding their use in combustion engines. Due to the current shift towards e-mobility, the future use of these materials remains largely unclear, although a large amount of components made of these alloys will be available in the upcoming years due to recycling. For these reasons, the future use of respective Al scrap needs to be determined. The hypothesis in terms of the material discovery challenge is that a mixture of a number of alloys (3-6 alloys) can yield novel alloy designs with superior properties to be used in future products.</p>
-<p>Challenge 1
-Material Scientists are increasingly employing simulation to determine the properties of combinations of novel alloy candidates. Due to the complexity of the simulation and respective computational efforts, only a subset can be simulated by sampling of combinations. Yet, a severe challenge is found in understanding simulated data due size and scaling of the dataset. Currently, mainly parallel coordinate plots as well as scatter plots are used to get an impression of the composition – microstructure – property relationship of the alloys, i.e., only selected input and output parameters are visualized to find a correlation.</p>
-<p>Challenge 2
-Due to the complexity of the simulation and respective computational efforts, only  subsets of combinations can be sampled. The complexity of respective simulations is even further elevated when mixing more scrap materials. Subtle changes in the material decomposition may yield strong impacts in the simulated parameters. with the target of identifying  chemical compositions that possess ideal target parameters for a specific application,  optimization algorithms are used. In this challenge (intermediate) results from the multi-dimensional visualization and analysis should therefore be used to communicate with respective optimization algorithms.</p>
+<p>This year&rsquo;s competition focuses on computational screening of alloy compositions from scrap metals to enable rapid discovery of new sustainable alloys. Materials research must become faster and more flexible to meet current societal challenges such as climate neutrality by 2050, the European Green Deal for a circular economy, current bottlenecks in raw material supply chains, and rising raw material and energy costs <a href="#References and Acknowledgments">[ 1 ]</a>
+. Recycling offers great potential for the development of new sustainable materials <a href="#References and Acknowledgments">[ 2 ]</a>
+. New alloys can be smelted by suitable combinations of different high-value scrap metals, which can serve as alternatives in the aerospace, power generation or automotive industries. To this end, we are using a simulation-based, high-throughput alloy screening approach, complemented by experimental data and validation, to dramatically accelerate the process of identifying and developing new scrap-based alloys that yield novel, tailored alloy designs with specific properties that can be reintegrated into advanced products and applications.</p>
+<p>The data provided for this challenge was generated for the specific use case of developing a new Al-based alloy suitable for additive manufacturing by blending different available aluminum metal scrap such as automotive Al-Si piston alloys <a href="#References and Acknowledgments">[ 3, 4, 5 ]</a>
+ and other alloys from different sectors. Different alloy designs were initially generated based on mixing ratios between available scrap alloys. The CALPHAD method was used to perform equilibrium and non-equilibrium calculations to predict relevant thermo-physical and mechanical variables such as the content of volatile elements like Mg and Zn, phase formation and their fractions, solidification intervals, thermo-physical parameters, yield strength and hot crack sensitivity for each alloy composition.</p>
+<p>To evaluate the obtained data, sensitivity analysis is performed to find composition-microstructure-property correlations within these complex material systems. Currently, 2D and 3D plots (line or scatter) are used to visualize and interpret the data in an attempt to find correlations and indicators to identify optimized alloys with appropriate target properties for aerospace applications (e.g. Fig.1).</p>
+
+
+<img src="/pcp.png" alt="parallel coordinates plot visualizing the information that can be obtained using high-throughput thermodynamic calculations to predict properties." class="matlab">
+<p style="color: grey;">Fig.1: parallel coordinates plot visualizing the information that can be obtained using high-throughput thermodynamic calculations to predict properties.</p>
+
+<p>The challenge in terms of visualization is to develop (novel) visual encodings that can provide valuable insights into abstract material data generated from varying ratios of these alloys and simulating their respective material properties, e.g., in terms of understanding and interpreting data, generating overviews, or revealing interesting input/output areas or individual alloy candidates.</p>
 <p>Based on this, we have provided a list of visualization <a href="/tasks">tasks</a>
  for this contest.</p>
 
@@ -200,32 +207,315 @@ Due to the complexity of the simulation and respective computational efforts, on
   
   
   
-  <p>The PI Instrument page is found at <a href="https://oceanobservatories.org/pi-instrument/cabled-array-vent-imaging-sonar-covis/" target="_blank" target="_blank">https://oceanobservatories.org/pi-instrument/cabled-array-vent-imaging-sonar-covis/</a>
- . This is the official description of COVIS for the Ocean Observatories Initiative (OOI).
-COVIS data from the OOI deployment can be found at  <a href="http://piweb.ooirsn.uw.edu/covis/" target="_blank" target="_blank">http://piweb.ooirsn.uw.edu/covis/</a>
-. This folder has two subfolders ~/covis/data/ and ~/covis/processed/.</p>
-<p>The raw data is under ~/covis/data/ which contains ~BROWSE/, ~COVIS/, ~COVIS-ENG/, and ~INPUT/.  All COVIS raw data files come in a compressed file folder (&hellip;tar.gz).</p>
+  <p>Data was generated focusing on the combination of different Al-based scrap alloys.</p>
+<p>&gt; 100,000 combinations of 6 scrap metals were generated by Latin hypercube sampling and their output parameters were simulated, resulting in a table with a total of &gt;100,000 rows and 70 columns. Each row indicates a specific simulated material combination in terms of inputs and outputs.</p>
+<p>The columns contain 6 input parameters (i.e. the mixing ratio for each scrap) and 64 output parameters.
+The data can be divided into 4 categories:</p>
 <ul>
-<li><strong>BROWSE</strong> - data organized in folders by year and julian day  (same data as in COVIS and INPUT but reorganized in folders rather than just a long list)</li>
-<li><strong>COVIS</strong> - incoming data from 2018 to 2020</li>
-<li><strong>COVIS-ENG</strong> &ndash; information on COVIS operations but only 2018-2020</li>
-<li><strong>INPUT</strong> - incoming data from 2020 to 2023</li>
+<li>(1) scrap alloys for mixing</li>
+<li>(2) calculated chemical composition after scrap mixing (12 elements)</li>
+<li>(3) microstructure (38 microstructural parameters)</li>
+<li>(4) properties (3 mechanical parameters + 11 thermophysical parameters).</li>
 </ul>
-<p>The processed data is under ~/covis/processed/</p>
+<p>To summarize, this data contains:</p>
 <ul>
-<li><strong>2019 Thermistor Data/</strong> - temperature data from small arrays of RBR solo thermistors set within COVIS’s field of vision - this is a curated data set related to a particular publication <a href="#References and Acknowledgments">[ 5 ]</a>
-</li>
-<li><strong>Automatic_Postprocessing_Version3.2/</strong> - processed data 2020 - 2023</li>
-<li><strong>COVIS_data_structure_description_diffuse_rev1.pdf</strong> - description of the processed data files (.mat format containing a single structure called covis) for the diffuse mode results</li>
-<li><strong>COVIS_data_structure_description_imaging_rev1.pdf</strong> - description of the processed data files (.mat format containing a single structure called covis) for the imaging mode results</li>
-<li><strong>latest/</strong> - processed data 2020 - 2023 - seems to be same as Automatic_Postprocessing_Version3.2/ but was probably intended to be more temporary</li>
+<li><strong>.csv file (~100 MB)</strong></li>
+<li><strong>&gt; 100000 lines à each line indicates data for one alloy design</strong></li>
+<li><strong>70 columns à 6 input variables, 64 output variables</strong></li>
 </ul>
-<p>Data collection varies a bit but for 2020-2023, COVIS was collecting diffuse mode data hourly every day for 6 days and then imaging and doppler mode data hourly on the 7th day. Note that a diffuse map output is also computable from the imaging data so you will see diffuse mode files every day. There is no automatic computation of doppler mode data so those files are empty or missing (but the raw data exists).</p>
-<p><strong>Data file sizes:</strong><br>
-Diffuse files are 325 kb or thereabouts (varies a bit but shouldn’t be much smaller)<br>
-Imaging files are 21.5 Mb or thereabouts</p>
-<p>COVIS code repository: <a href="https://github.com/COVIS-Sonar/postprocessing.git" target="_blank" target="_blank">https://github.com/COVIS-Sonar/postprocessing.git</a>
-.  This has both the operational processing code to get from raw data (including all inputs other than the raw data files) to gridded data as well as some (very basic) visualization options.</p>
+<h3 id="in-detail-description">In-Detail Description</h3>
+<p>The provided data file (<em>02a_OUTPUT_Summary.csv</em>) contains the following parameters:</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Variable (67 columns)</th>
+          <th style="text-align: left">Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left">KS1295[%]</td>
+          <td style="text-align: left">Mixing ratio of first scrap alloy (Al-Si piston alloy) – input</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">6082[%]</td>
+          <td style="text-align: left">Mixing ratio of second scrap alloy (6082 Al alloy) – input</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">2024[%]</td>
+          <td style="text-align: left">Mixing ratio of third scrap alloy (2024 Al alloy) – input</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Batterybox [%]</td>
+          <td style="text-align: left">Mixing ratio of fourth scrap alloy (mixture of 6xxx Al alloys from a battery box) – input</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">4043 [%]</td>
+          <td style="text-align: left">Mixing ratio of fifth scrap alloy (4043 Al alloy) – input</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">3003 [%]</td>
+          <td style="text-align: left">Mixing ratio of sixth scrap alloy (3003 Al alloy) – input</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Al</td>
+          <td style="text-align: left">Aluminum content after mixing scraps (in wt.%)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Si</td>
+          <td style="text-align: left">Silicon content after mixing scraps (in wt.%)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Cu</td>
+          <td style="text-align: left">Copper content after mixing scraps (in wt.%)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Ni</td>
+          <td style="text-align: left">Nickel content after mixing scraps (in wt.%)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Mg</td>
+          <td style="text-align: left">Magnesium content after mixing scraps (in wt.%)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Mn</td>
+          <td style="text-align: left">Manganese content after mixing scraps (in wt.%)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Fe</td>
+          <td style="text-align: left">Iron content after mixing scraps (in wt.%)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Cr</td>
+          <td style="text-align: left">Chromium content after mixing scraps (in wt.%)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Ti</td>
+          <td style="text-align: left">Titanium content after mixing scraps (in wt.%)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Zr</td>
+          <td style="text-align: left">Zirconium content after mixing scraps (in wt.%)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">V</td>
+          <td style="text-align: left">Vanadium content after mixing scraps (in wt.%)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">P</td>
+          <td style="text-align: left">Phosphorus content after mixing scraps (in wt.%)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Vf_FCC_A1</td>
+          <td style="text-align: left">Volume fraction (in vol.%) of the a-Al-matrix phase</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Vf_DIAMOND_A4</td>
+          <td style="text-align: left">Volume fraction (in vol.%) of the Si phase</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Vf_AL15SI2M4</td>
+          <td style="text-align: left">Volume fraction (in vol.%) of the Al15(Fe,Mn)3Si2 phase</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Vf_AL3X</td>
+          <td style="text-align: left">Volume fraction (in vol.%) of the Al3(Ti,Zr) phase</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Vf_AL6MN</td>
+          <td style="text-align: left">Volume fraction (in vol.%) of the Al6Mn phase</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Vf_ALP</td>
+          <td style="text-align: left">Volume fraction (in vol.%) of the AlP phase</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Vf_AL3NI2</td>
+          <td style="text-align: left">Volume fraction (in vol.%) of the d-Al3(Cu,Ni)2 phase</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Vf_AL3NI_D011</td>
+          <td style="text-align: left">Volume fraction (in vol.%) of the e-Al3Ni phase</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Vf_AL7CU4NI</td>
+          <td style="text-align: left">Volume fraction (in vol.%) of the g-Al7Cu4Ni phase</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Vf_AL2CU_C16</td>
+          <td style="text-align: left">Volume fraction (in vol.%) of the q-Al2Cu phase</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Vf_Q_ALCUMGSI</td>
+          <td style="text-align: left">Volume fraction (in vol.%) of the Q-Al5Si6Cu2Mg8 phase</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Vf_AL7CU2FE</td>
+          <td style="text-align: left">Volume fraction (in vol.%) of the Al7Cu2Fe phase</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Vf_MG2SI_C1</td>
+          <td style="text-align: left">Volume fraction (in vol.%) of the Mg2Si phase</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Vf_AL9FE2SI2</td>
+          <td style="text-align: left">Volume fraction (in vol.%) of the β-Al5FeSi phase</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Vf_AL18FE2MG7SI10</td>
+          <td style="text-align: left">Volume fraction (in vol.%) of the π-Al8FeMg3Si6 phase</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">eut. frac.[%]</td>
+          <td style="text-align: left">Fraction of eutectic after solidification (in %)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">eut. T (°C)</td>
+          <td style="text-align: left">Temperature of eutectic formation (in °C)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">T_FCC_A1</td>
+          <td style="text-align: left">Solidification temperature (in °C) of the a-Al-matrix phase</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">T_DIAMOND_A4</td>
+          <td style="text-align: left">Solidification temperature (in °C) of the Si phase</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">T_AL15SI2M4</td>
+          <td style="text-align: left">Solidification temperature (in °C) of the Al15(Fe,Mn)3Si2 phase</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">T_AL3X</td>
+          <td style="text-align: left">Solidification temperature (in °C) of the Al3(Ti,Zr) phase</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">T_AL6MN</td>
+          <td style="text-align: left">Solidification temperature (in °C) of the Al6Mn phase</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">T_ALP</td>
+          <td style="text-align: left">Solidification temperature (in °C) of the AlP phase</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">T_AL3NI2</td>
+          <td style="text-align: left">Solidification temperature (in °C) of the d-Al3(Cu,Ni)2 phase</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">T_AL3NI_D011</td>
+          <td style="text-align: left">Solidification temperature (in °C) of the e-Al3Ni phase</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">T_AL7CU4NI</td>
+          <td style="text-align: left">Solidification temperature (in °C) of the g-Al7Cu4Ni phase</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">T_AL2CU_C16</td>
+          <td style="text-align: left">Solidification temperature (in °C) of the q-Al2Cu phase</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">T_Q_ALCUMGSI</td>
+          <td style="text-align: left">Solidification temperature (in °C) of the Q-Al5Si6Cu2Mg8 phase</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">T_AL7CU2FE</td>
+          <td style="text-align: left">Solidification temperature (in °C) of the Al7Cu2Fe phase</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">T_MG2SI_C1</td>
+          <td style="text-align: left">Solidification temperature (in °C) of the Mg2Si phase</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">T_AL9FE2SI2</td>
+          <td style="text-align: left">Solidification temperature (in °C) of the β-Al5FeSi phase</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">T_AL18FE2MG7SI10</td>
+          <td style="text-align: left">Solidification temperature (in °C) of the π-Al8FeMg3Si6 phase</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">T(liqu)</td>
+          <td style="text-align: left">Liquidus temperature (in °C)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">T(sol)</td>
+          <td style="text-align: left">Solidus temperature (in °C)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">delta_T</td>
+          <td style="text-align: left">Solidification interval (T(liqu) – T(sol), in °C)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">delta_T_FCC</td>
+          <td style="text-align: left">Solidification interval (T_FCC_A1 – T(sol), in °C)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">delta_T_Al15Si2M4</td>
+          <td style="text-align: left">Solidification interval (T_Al15Si2M4 – T(sol), in °C)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">delta_T_Si</td>
+          <td style="text-align: left">Solidification interval (T_DIAMOND_A4 – T(sol), in °C)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">CSC</td>
+          <td style="text-align: left">Hot crack susceptibility coefficient</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">YS (MPa)</td>
+          <td style="text-align: left">Total yield strength (in MPa)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Hardness (Vickers)</td>
+          <td style="text-align: left">Total hardness (in Vickers)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">CTEvol (1/K) (20.0-300.0°C)</td>
+          <td style="text-align: left">Volumetric thermal expansion coefficient (in 1/K, temperature range 20-300°C)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Density (g/cm³)</td>
+          <td style="text-align: left">Alloy density (in g/cm³)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Volume (m³/mol)</td>
+          <td style="text-align: left">System volume (in m³/mol)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">El. conductivity (S/m)</td>
+          <td style="text-align: left">Electrical conductivity (in S/m)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">El. resistivity (ohm·m)</td>
+          <td style="text-align: left">Electrical resistivity (in ohm·m)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Heat capacity (J/(mol·K))</td>
+          <td style="text-align: left">Heat capacity (in J/(mol·K))</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Therm. conductivity (W/(m·K))</td>
+          <td style="text-align: left">Thermal conductivity (in W/(m·K))</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Therm. diffusivity (m²/s)</td>
+          <td style="text-align: left">Thermal diffusivity (in m²/s)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Therm. resistivity (mK/W)</td>
+          <td style="text-align: left">Thermal resistivity (in mK/W)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Linear thermal expansion (1/K) (20.0-300.0°C)</td>
+          <td style="text-align: left">Linear thermal expansion coefficient (in 1/K, temperature range 20-300°C)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left">Technical thermal expansion (1/K) (20.0-300.0°C)</td>
+          <td style="text-align: left">Technical thermal expansion coefficient (in 1/K, temperature range 20-300°C)</td>
+      </tr>
+  </tbody>
+</table>
+<p>Some lines also contain nan values for certain output variables, indicating either that the equilibrium could not be found during the calculation and thus the property could not be calculated correctly, or that the considered phase does not form for the investigated chemical composition.</p>
 
 
 <div style="height:  20px"></div>
@@ -247,23 +537,7 @@ Imaging files are 21.5 Mb or thereabouts</p>
   
   
   
-  <p>OVIS data from the OOI deployment can be found at  <a href="http://piweb.ooirsn.uw.edu/covis/" target="_blank" target="_blank">http://piweb.ooirsn.uw.edu/covis/</a>
-</p>
-<p>COVIS is no longer collecting data but there is a lot of data from two past deployments:</p>
-<ul>
-<li><strong>2010-2015 COVIS</strong> was deployed at the Main Endeavour Field on the Juan de Fuca Ridge (JdFR) and connected to Ocean Networks Canada (<a href="https://www.oceannetworks.ca/" target="_blank" target="_blank">https://www.oceannetworks.ca/</a>
- ).<br>
-A combination of isosurfacing and slicing techniques were used to extract plume centerlines (the central line of rise of the plume) from the plume imaging data and infer characteristics of the ocean currents and hydrothermal venting over time <a href="#References and Acknowledgments">[ 4 ]</a>
-.</li>
-<li><strong>2018-2023 COVIS</strong> was deployed in the caldera of Axial Volcano off the west coast of North America and connected to a junction box in ASHES vent field that is operated by the Ocean Observatories Initiative’s Regional Cabled Array (<a href="https://oceanobservatories.org/pi-instrument/cabled-array-vent-imaging-sonar-covis/%29" target="_blank" target="_blank">https://oceanobservatories.org/pi-instrument/cabled-array-vent-imaging-sonar-covis/)</a>
-. Related work uses in situ measurements (video, temperature, flow) to establish baseline and ground truth estimates of discharge area and heat transfer by hydrothermal fluids for selected regions <a href="#References and Acknowledgments">[ 6 ]</a>
-.</li>
-</ul>
-<p>Acoustic Imaging and COVIS project site: <a href="https://vizlab.rutgers.edu/node/61" target="_blank" target="_blank">https://vizlab.rutgers.edu/node/61</a>
-. 
-This is the Rutgers project site. It’s not very up-to-date but it has some nice background information on acoustic imaging. 
-There is a sister UW site at <a href="https://apl.uw.edu/project/project.php?id=covis" target="_blank" target="_blank">https://apl.uw.edu/project/project.php?id=covis</a>
- that focus more on the engineering for COVIS and its deployment.</p>
+  <p>Data Download will be available soon!</p>
 
 
 <div style="height:  20px"></div>
@@ -285,21 +559,16 @@ There is a sister UW site at <a href="https://apl.uw.edu/project/project.php?id=
   
   
   
-  <p>The contest is organized by the <em>Crosssectional Group Visualization</em> within the National High Performance Computing Center for Computational Engineering Science (NHR4CES <a href="#References and Acknowledgments">[ 7 ]</a>
-) as well as the department of Marine &amp; Coastal Sciences at Rutgers University.</p>
-<p>[1] Bemis, K. G., Silver, D., Xu, G., Light, R., Jackson, D., Jones, C., &hellip; &amp; Liu, L. (2015): <em>The path to COVIS: A review of acoustic imaging of hydrothermal flow regimes</em>  - <a href="https://www.sciencedirect.com/science/article/pii/S0967064515002027?via%3Dihub" target="_blank" target="_blank">Available here</a>
+  <p>[1] EUROPEAN ALUMINIUM | A strategy for achieving aluminium’s full potential for circular economy by 2030 (2022)
+<a href="https://european-aluminium.eu/wp-content/uploads/2022/08/european-aluminium-circular-aluminium-action-plan.pdf" target="_blank" target="_blank">Available here</a>
 </p>
-<p>[2] Xu, G., Jackson, D. R., &amp; Bemis, K. G. (2017): <em>The relative effect of particles and turbulence on acoustic scattering from deep sea hydrothermal vent plumes revisited</em> - <a href="https://pubmed.ncbi.nlm.nih.gov/28372053/" target="_blank" target="_blank">Available here</a>
+<p>[2] D. Raabe (2023) The Materials Science behind Sustainable Metals and Alloys, Chem. Rev. 123, 2436−2608, <a href="https://doi.org/10.1021/acs.chemrev.2c00799" target="_blank" target="_blank">Available here</a>
 </p>
-<p>[3] Bemis, K. G., Zhao, M., Sacker, J., &amp; Soule, D. C. (2022): <em>Systematic shift in plume bending direction at Grotto Vent, Main Endeavour Field, Juan de Fuca Ridge implies changes in venting output along the Endeavour Segment</em> - <a href="https://www.frontiersin.org/articles/10.3389/feart.2022.938675/full" target="_blank" target="_blank">Available here</a>
+<p>[3] K. Bugelnig, H. Germann, T. Steffens, F. Sket, J. Adrien, E. Maire, E. Boller, G. Requena (2018) Revealing the Effect of Local Connectivity of Rigid Phases during Deformation at High Temperature of Cast AlSi12Cu4Ni(2,3)Mg Alloys, Materials.11(8), 1300. <a href="https://doi.org/10.3390/ma11081300" target="_blank" target="_blank">Available here</a>
 </p>
-<p>[4] Bemis, K. G., Rona, P. A., Jackson, D., Jones, C., Silver, D., &amp; Mitsuzawa, K. (2002): <em>A comparison of black smoker hydrothermal plume behavior at Monolith Vent and at Clam Acres Vent Field: Dependence on source configuration</em> - <a href="https://link.springer.com/article/10.1023/A:1022484931681" target="_blank" target="_blank">Available here</a>
+<p>[4] K. Bugelnig, F. Sket, H. Germann, T. Steffens, R. Koos, F. Wilde, E. Boller, G. Requena (2018) Influence of 3D connectivity of rigid phases on damage evolution during tensile deformation of an AlSi12Cu4Ni2 piston alloy, Mater. sci. eng. A 709, 193-202. <a href="https://doi.org/10.1016/j.msea.2017.10.035" target="_blank" target="_blank">Available here</a>
 </p>
-<p>[5] Jackson, D., Bemis, K., Xu, G., &amp; Ivakin, A. (2022): <em>Sonar observation of heat flux of diffuse hydrothermal flows.</em> - <a href="https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2021EA001974" target="_blank" target="_blank">Available here</a>
-</p>
-<p>[6] Xu, G., Bemis, K., Jackson, D., &amp; Ivakin, A. (2021): <em>Acoustic and In‐Situ Observations of Deep Seafloor Hydrothermal Discharge: An OOI Cabled Array ASHES Vent Field Case Study</em> - <a href="https://www.researchwithrutgers.com/en/publications/acoustic-and-in-situ-observations-of-deep-seafloor-hydrothermal-d" target="_blank" target="_blank">Available here</a>
-</p>
-<p>[7] <em>National High Performance Computing Center for Computational Engineering Science</em> (NHR4CES) - <a href="https://www.nhr4ces.de/" target="_blank" target="_blank">Website</a>
+<p>[5] K. Bugelnig, H. Germann, T. Steffens, R. Koos, E. Boller, F. Wilde, G. Requena (2023), 3D Investigation of Damage During Strain-Controlled Thermomechanical Fatigue of Cast Al–Si Alloys, Adv. Eng. Mater., 2300339. <a href="https://doi.org/10.1002/adem.202300339" target="_blank" target="_blank">Available here</a>
 </p>
 
 </div>
@@ -320,7 +589,7 @@ There is a sister UW site at <a href="https://apl.uw.edu/project/project.php?id=
       <div class="col-12">
         <div class="sub-footer-inner">
           <ul>
-            <li style="font-weight: normal;">IEEE SciVis Contest 2024</li>
+            <li style="font-weight: normal;">IEEE SciVis Contest 2025</li>
             <li>||</li>
             <li class="zerostatic"><a href="https://www.ieeevis.org" target="_blank">www.ieeevis.org</a></li>
           </ul>
@@ -336,7 +605,7 @@ There is a sister UW site at <a href="https://apl.uw.edu/project/project.php?id=
   
 
   
-  <script type="text/javascript" src="/js/scripts.min.302a6fc365d5139fb98cf60bdb8f715d96257ea189161d36c190ccfa8182e569.js"></script>
+  <script type="text/javascript" src="/js/scripts.min.ec19db7e4836c12e2c5e3697d926bc3e4c22005167d9826aab54feca08f0c093.js"></script>
   
 
   

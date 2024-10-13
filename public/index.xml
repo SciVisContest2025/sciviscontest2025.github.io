@@ -4,67 +4,51 @@
     <title>2025 IEEE SciVis Contest</title>
     <link>https://sciviscontest2025.github.io/</link>
     <description>Recent content on 2025 IEEE SciVis Contest</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 28 Nov 2019 15:14:39 +1000</lastBuildDate><atom:link href="https://sciviscontest2025.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 28 Nov 2019 15:14:39 +1000</lastBuildDate>
+    <atom:link href="https://sciviscontest2025.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Submission Instruction</title>
       <link>https://sciviscontest2025.github.io/submission/instruction/</link>
       <pubDate>Thu, 28 Nov 2019 15:14:39 +1000</pubDate>
-      
       <guid>https://sciviscontest2025.github.io/submission/instruction/</guid>
-      <description>Your submission should include:
-A 2-page PDF describing your visualization and analysis techniques. Focus on the techniques you used and results you obtained. Do not waste space on background information or data descriptions. Please follow the formatting guidelines for the manuscript.(you can download LaTeX and Word templates from this site). Images which explain how your visualizations help answering the questions. The images should be appended to the 2-page document (thus, your whole PDF document should have more than 2 pages).</description>
+      <description>&lt;p&gt;Your submission should include:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;A 2-page PDF describing your visualization and analysis techniques. Focus on the techniques you used and results you obtained. Do not waste space on background information or data descriptions. Please follow the &lt;a href=&#34;http://junctionpublishing.org/vgtc/Tasks/camera.html&#34; target=&#34;_blank&#34;&gt;formatting guidelines for the manuscript.&lt;/a&gt;&#xD;&#xA; (you can download LaTeX and Word templates from this site).&lt;/li&gt;&#xA;&lt;li&gt;Images which explain how your visualizations help answering the questions. The images should be appended to the 2-page document (thus, your whole PDF document should have more than 2 pages). The PDF document should be no bigger than 50 MB in size.&lt;/li&gt;&#xA;&lt;li&gt;An MPEG, AVI, or Quicktime video (duration at most 10 minutes) showing the system, methods, or processes in action. This will be most helpful for demonstrating the effectiveness of your approach.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;To submit:&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Important Dates</title>
       <link>https://sciviscontest2025.github.io/submission/dates/</link>
       <pubDate>Thu, 28 Nov 2019 15:14:39 +1000</pubDate>
-      
       <guid>https://sciviscontest2025.github.io/submission/dates/</guid>
-      <description>We will be following the process of the last years.
-There might be slight changes but the plan is this:
-Dates October 14, 2024 Official announcement of the 2025 IEEE SciVis Contest at IEEE VIS 2024. approx. July 31, 2025 Submission Deadline. approx. September, 2025 Winner notification. approx. October, 2025 Official announcement of the end results at IEEE VIS 2025. Deadlines are set as 23:59 AOE.</description>
+      <description>&lt;p&gt;We will be following the process of the last years.&lt;br&gt;&#xA;There might be slight changes but the plan is this:&lt;/p&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th style=&#34;text-align: left&#34;&gt;Dates&lt;/th&gt;&#xA;          &lt;th style=&#34;text-align: left&#34;&gt;&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;October 14, 2024&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;Official announcement of the 2025 IEEE SciVis Contest at IEEE VIS 2024.&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;approx. July 31, 2025&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;Submission Deadline.&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;approx. September, 2025&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;Winner notification.&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;approx. October, 2025&lt;/td&gt;&#xA;          &lt;td style=&#34;text-align: left&#34;&gt;Official announcement of the end results at IEEE VIS 2025.&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;p&gt;Deadlines are set as 23:59 AOE.&lt;/p&gt;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;div style=&#34;height:  20px&#34;&gt;&lt;/div&gt;&#xD;&#xA;&#xA;&lt;hr&gt;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;div style=&#34;height:  20px&#34;&gt;&lt;/div&gt;</description>
     </item>
-    
     <item>
       <title>Data Description</title>
       <link>https://sciviscontest2025.github.io/data/datalocation/</link>
       <pubDate>Mon, 11 Feb 2019 19:27:37 +1000</pubDate>
-      
       <guid>https://sciviscontest2025.github.io/data/datalocation/</guid>
-      <description>The PI Instrument page is found at https://oceanobservatories.org/pi-instrument/cabled-array-vent-imaging-sonar-covis/. This is the official description of COVIS for the Ocean Observatories Initiative (OOI). COVIS data from the OOI deployment can be found at http://piweb.ooirsn.uw.edu/covis/. This folder has two subfolders ~/covis/data/ and ~/covis/processed/.
-The raw data is under ~/covis/data/ which contains ~BROWSE/, ~COVIS/, ~COVIS-ENG/, and ~INPUT/. All COVIS raw data files come in a compressed file folder (&amp;hellip;tar.gz).
-BROWSE - data organized in folders by year and julian day (same data as in COVIS and INPUT but reorganized in folders rather than just a long list) COVIS - incoming data from 2018 to 2020 COVIS-ENG &amp;ndash; information on COVIS operations but only 2018-2020 INPUT - incoming data from 2020 to 2023 The processed data is under ~/covis/processed/</description>
+      <description>&lt;p&gt;Data was generated focusing on the combination of different Al-based scrap alloys.&lt;/p&gt;&#xA;&lt;p&gt;&amp;gt; 100,000 combinations of 6 scrap metals were generated by Latin hypercube sampling and their output parameters were simulated, resulting in a table with a total of &amp;gt;100,000 rows and 70 columns. Each row indicates a specific simulated material combination in terms of inputs and outputs.&lt;/p&gt;&#xA;&lt;p&gt;The columns contain 6 input parameters (i.e. the mixing ratio for each scrap) and 64 output parameters.&#xA;The data can be divided into 4 categories:&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Judges</title>
       <link>https://sciviscontest2025.github.io/submission/judges/</link>
       <pubDate>Thu, 28 Nov 2019 15:14:39 +1000</pubDate>
-      
       <guid>https://sciviscontest2025.github.io/submission/judges/</guid>
-      <description>To be announced.</description>
+      <description>&lt;p&gt;To be announced.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Download Data and Further Resources</title>
       <link>https://sciviscontest2025.github.io/data/download/</link>
       <pubDate>Mon, 11 Feb 2019 19:30:08 +1000</pubDate>
-      
       <guid>https://sciviscontest2025.github.io/data/download/</guid>
       <description>None</description>
     </item>
-    
     <item>
       <title>References and Acknowledgments</title>
       <link>https://sciviscontest2025.github.io/data/references/</link>
       <pubDate>Mon, 11 Feb 2019 19:30:08 +1000</pubDate>
-      
       <guid>https://sciviscontest2025.github.io/data/references/</guid>
       <description>None</description>
     </item>
-    
   </channel>
 </rss>

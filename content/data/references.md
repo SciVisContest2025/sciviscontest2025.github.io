@@ -6,19 +6,13 @@ weight: 5
 summary: None
 ---
 
-The contest is organized by the *Crosssectional Group Visualization* within the National High Performance Computing Center for Computational Engineering Science (NHR4CES [\[ 7 \]]({{< relref "#References and Acknowledgments" >}})) as well as the department of Marine & Coastal Sciences at Rutgers University.
+[1] EUROPEAN ALUMINIUM | A strategy for achieving aluminium’s full potential for circular economy by 2030 (2022)
+[Available here](https://european-aluminium.eu/wp-content/uploads/2022/08/european-aluminium-circular-aluminium-action-plan.pdf)
 
+[2] D. Raabe (2023) The Materials Science behind Sustainable Metals and Alloys, Chem. Rev. 123, 2436−2608, [Available here](https://doi.org/10.1021/acs.chemrev.2c00799)
 
-[1] Bemis, K. G., Silver, D., Xu, G., Light, R., Jackson, D., Jones, C., ... & Liu, L. (2015): *The path to COVIS: A review of acoustic imaging of hydrothermal flow regimes*  - [Available here](https://www.sciencedirect.com/science/article/pii/S0967064515002027?via%3Dihub)
+[3] K. Bugelnig, H. Germann, T. Steffens, F. Sket, J. Adrien, E. Maire, E. Boller, G. Requena (2018) Revealing the Effect of Local Connectivity of Rigid Phases during Deformation at High Temperature of Cast AlSi12Cu4Ni(2,3)Mg Alloys, Materials.11(8), 1300. [Available here](https://doi.org/10.3390/ma11081300)
 
-[2] Xu, G., Jackson, D. R., & Bemis, K. G. (2017): *The relative effect of particles and turbulence on acoustic scattering from deep sea hydrothermal vent plumes revisited* - [Available here](https://pubmed.ncbi.nlm.nih.gov/28372053/)
+[4] K. Bugelnig, F. Sket, H. Germann, T. Steffens, R. Koos, F. Wilde, E. Boller, G. Requena (2018) Influence of 3D connectivity of rigid phases on damage evolution during tensile deformation of an AlSi12Cu4Ni2 piston alloy, Mater. sci. eng. A 709, 193-202. [Available here](https://doi.org/10.1016/j.msea.2017.10.035)
 
-[3] Bemis, K. G., Zhao, M., Sacker, J., & Soule, D. C. (2022): *Systematic shift in plume bending direction at Grotto Vent, Main Endeavour Field, Juan de Fuca Ridge implies changes in venting output along the Endeavour Segment* - [Available here](https://www.frontiersin.org/articles/10.3389/feart.2022.938675/full)
-
-[4] Bemis, K. G., Rona, P. A., Jackson, D., Jones, C., Silver, D., & Mitsuzawa, K. (2002): *A comparison of black smoker hydrothermal plume behavior at Monolith Vent and at Clam Acres Vent Field: Dependence on source configuration* - [Available here](https://link.springer.com/article/10.1023/A:1022484931681)
-
-[5] Jackson, D., Bemis, K., Xu, G., & Ivakin, A. (2022): *Sonar observation of heat flux of diffuse hydrothermal flows.* - [Available here](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2021EA001974)
-
-[6] Xu, G., Bemis, K., Jackson, D., & Ivakin, A. (2021): *Acoustic and In‐Situ Observations of Deep Seafloor Hydrothermal Discharge: An OOI Cabled Array ASHES Vent Field Case Study* - [Available here](https://www.researchwithrutgers.com/en/publications/acoustic-and-in-situ-observations-of-deep-seafloor-hydrothermal-d)
-
-[7] *National High Performance Computing Center for Computational Engineering Science* (NHR4CES) - [Website](https://www.nhr4ces.de/)  
+[5] K. Bugelnig, H. Germann, T. Steffens, R. Koos, E. Boller, F. Wilde, G. Requena (2023), 3D Investigation of Damage During Strain-Controlled Thermomechanical Fatigue of Cast Al–Si Alloys, Adv. Eng. Mater., 2300339. [Available here](https://doi.org/10.1002/adem.202300339)
