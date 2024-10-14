@@ -20,16 +20,15 @@ On this website, you can find information on the provided [data,](/data) the vis
 If there still are questions, feel free to contact the [contest chairs](mailto:scivis_contest@ieeevis.org) or join the [Google Group.](https://groups.google.com/g/scivis2025).
 
 
-<!--###### Watch a video from IEEE VIS 2024 presenting the data and tasks:
+###### Watch a video from IEEE VIS 2024 presenting the data and tasks:
 
 
 {{< rawhtml >}}
 <div class="video-container">
-  <iframe src="https://www.youtube.com/embed/tNdurbOHuLM?si=Hol3IAN9fREPLxT4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/kmC7aSLoNCw?si=Zv-P5u6J8wyXR_tH" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 <br>
 {{< /rawhtml >}}
--->
 
 ###### Contact
 Chair: Christoph Heinzl, University of Passau, Germany - [contact via email](mailto:christoph.heinzl@uni-passau.de)  
