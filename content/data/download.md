@@ -1,12 +1,20 @@
 ---
-title: 'Download Data and Further Resources'
+title: 'Download Data'
 date: 2019-02-11T19:30:08+10:00
 draft: false
 weight: 3
 summary: None  
 ---
 
-Data Download will be available soon!
+The data has been published on Zenodo, using the following link:
+
+[https://zenodo.org/records/14160521](https://zenodo.org/records/14160521)
+It comprises a single text file (size: ~150 MB) that includes all parameters as described above.
+
+If you use this data set in a publication, please acknowledge the following:
+
+K. Bugelnig and G. Requena, *“Dataset - SciVisContest - Materials Discovery Challenge”.* \
+Zenodo, Nov. 14, 2024. doi: 10.5281/zenodo.14160521
 
 
 {{< rawhtml >}}
