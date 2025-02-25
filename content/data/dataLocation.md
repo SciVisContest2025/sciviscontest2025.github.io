@@ -17,8 +17,8 @@ The data can be divided into 4 categories:
 
 To summarize, this data contains:
 - **.csv file (~100 MB)**
-- **\> 100000 lines à each line indicates data for one alloy design**
-- **70 columns à 6 input variables, 64 output variables**
+- **\> 100000 lines -> each line indicates data for one alloy design**
+- **70 columns -> 6 input variables, 64 output variables**
 
 
 ### In-Detail Description
@@ -44,13 +44,13 @@ The provided data file (*02a_OUTPUT_Summary.csv*) contains the following paramet
 | Ti                                            | Titanium content after mixing scraps (in wt.%)                              |
 | Zr                                            | Zirconium content after mixing scraps (in wt.%)                             |
 | V                                             | Vanadium content after mixing scraps (in wt.%)                              |
-| P                                             | Phosphorus content after mixing scraps (in wt.%)                            |
+| Zn                                            | Zink content after mixing scraps (in wt.%)                                  |
 | Vf_FCC_A1                                     | Volume fraction (in vol.%) of the a-Al-matrix phase                         |
 | Vf_DIAMOND_A4                                 | Volume fraction (in vol.%) of the Si phase                                  |
 | Vf_AL15SI2M4                                  | Volume fraction (in vol.%) of the Al15(Fe,Mn)3Si2 phase                     |
 | Vf_AL3X                                       | Volume fraction (in vol.%) of the Al3(Ti,Zr) phase                          |
 | Vf_AL6MN                                      | Volume fraction (in vol.%) of the Al6Mn phase                               |
-| Vf_ALP                                        | Volume fraction (in vol.%) of the AlP phase                                 |
+| Vf_MG2ZN3                                     | Volume fraction (in vol.%) of the MG2ZN3 phase                              |
 | Vf_AL3NI2                                     | Volume fraction (in vol.%) of the d-Al3(Cu,Ni)2 phase                       |
 | Vf_AL3NI_D011                                 | Volume fraction (in vol.%) of the e-Al3Ni phase                             |
 | Vf_AL7CU4NI                                   | Volume fraction (in vol.%) of the g-Al7Cu4Ni phase                          |
@@ -67,7 +67,7 @@ The provided data file (*02a_OUTPUT_Summary.csv*) contains the following paramet
 | T_AL15SI2M4                                   | Solidification temperature (in °C) of the Al15(Fe,Mn)3Si2 phase             |
 | T_AL3X                                        | Solidification temperature (in °C) of the Al3(Ti,Zr) phase                  |
 | T_AL6MN                                       | Solidification temperature (in °C) of the Al6Mn phase                       |
-| T_ALP                                         | Solidification temperature (in °C) of the AlP phase                         |
+| T_MG2ZN3                                      | Solidification temperature (in °C) of the MG2ZN3 phase                      |
 | T_AL3NI2                                      | Solidification temperature (in °C) of the d-Al3(Cu,Ni)2 phase               |
 | T_AL3NI_D011                                  | Solidification temperature (in °C) of the e-Al3Ni phase                     |
 | T_AL7CU4NI                                    | Solidification temperature (in °C) of the g-Al7Cu4Ni phase                  |
