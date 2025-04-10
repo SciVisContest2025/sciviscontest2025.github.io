@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "style.css",
-	"sourceRoot": "D:/Projects/Hugo/Sites/sciviscontest2025.github.io",
+	"sourceRoot": "C:/Data/Projects/Hugo/Sites/sciviscontest2025.github.io",
 	"sources": [
 		"themes/hugo-whisper-theme/assets/scss/style.scss",
 		"themes/hugo-whisper-theme/assets/scss/bootstrap/_functions.scss",
