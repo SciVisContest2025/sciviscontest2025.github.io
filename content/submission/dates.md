@@ -10,9 +10,9 @@ There might be slight changes but the plan is this:
 | Dates
 | :---        |    :---   |
 | **October 14, 2024** |  Official announcement of the 2025 IEEE SciVis Contest at IEEE VIS 2024.  |
-| approx. July 31, 2025 | Submission Deadline.  |
+| July 31, 2025 | Submission Deadline.  |
 | approx. September, 2025 |  Winner notification.  |
-| approx. October, 2025 | Official announcement of the end results at IEEE VIS 2025. |  
+| November, 2025 | Official announcement of the end results at IEEE VIS 2025. |  
 
 Deadlines are set as 23:59 AOE.
 

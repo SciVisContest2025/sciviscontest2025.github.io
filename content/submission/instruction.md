@@ -5,7 +5,7 @@ weight: 1
 ---
 
 Your submission should include:
-- A 2-page PDF describing your visualization and analysis techniques. Focus on the techniques you used and results you obtained. Do not waste space on background information or data descriptions. Please follow the [formatting guidelines for the manuscript.](http://junctionpublishing.org/vgtc/Tasks/camera.html) (you can download LaTeX and Word templates from this site).
+- A 2-page PDF describing your visualization and analysis techniques. Focus on the techniques you used and results you obtained. Do not waste space on background information or data descriptions. Please follow the [formatting guidelines for the manuscript.](https://tc.computer.org/vgtc/publications/conference/) (you can download LaTeX and Word templates from this site).
 - Images which explain how your visualizations help answering the questions. The images should be appended to the 2-page document (thus, your whole PDF document should have more than 2 pages). The PDF document should be no bigger than 50 MB in size.
 - An MPEG, AVI, or Quicktime video (duration at most 10 minutes) showing the system, methods, or processes in action. This will be most helpful for demonstrating the effectiveness of your approach.
 
