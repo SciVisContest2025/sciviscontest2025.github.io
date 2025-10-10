@@ -19,6 +19,8 @@ In 2025, the conference and this contest will be held in Vienna, Austria, and wi
 On this website, you can find information on the provided [data,](/data) the visualization [tasks,](/tasks) as well as the [submission process.](/submission)  
 If there still are questions, feel free to contact the [contest chairs](mailto:scivis_contest@ieeevis.org) or join the [Google Group.](https://groups.google.com/g/scivis2025).
 
+**The 2025 SciVis Contest Session at IEEE VIS will happen on Sunday, November 2, 2:00 PM - 5:30 PM.**
+
 
 ###### Watch a video from IEEE VIS 2024 presenting the data and tasks:
 
